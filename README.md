@@ -7,6 +7,3 @@ In today's dynamic business landscape, a robust and efficient point-of-sale (POS
 
 ## Website Link
 payeasypos.netlify.app
-
-
-Pay Easy is a leading POS machines provider company
