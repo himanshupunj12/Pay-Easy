@@ -1,0 +1,247 @@
+@media (max-width: 75em) {
+  .hero-content-box {
+    padding: 0;
+  }
+  .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 2.8rem;
+    text-align: center;
+  }
+  .heading-primary br {
+    display: none;
+  }
+  .grid {
+    column-gap: 3.2rem;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+  .hero-btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+  .hero-feature {
+    padding: 1.2rem;
+  }
+  .hero-feature-box p {
+    font-size: 1.6rem;
+  }
+  .hero-feature-box p strong {
+    font-size: 2rem;
+  }
+  .hero-feature-1 {
+    top: 40%;
+  }
+  .carousel-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+  }
+}
+@media (max-width: 62em) {
+  html {
+    font-size: 55%;
+  }
+  .section-hero .container {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+  .hero-feature-box p {
+    font-size: 1.2rem;
+  }
+  .hero-feature-box p strong {
+    font-size: 1.6rem;
+  }
+  .hero-feature-icon {
+    pad: 0.4rem;
+  }
+  .hero-feature-1 {
+    left: 6%;
+  }
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .container-cta {
+    row-gap: 1.8rem;
+  }
+  .cta-boxes {
+    height: 300px;
+    justify-self: center;
+  }
+  .box {
+    transform: translate(-50%, -50%) scale(3);
+  }
+  .cta-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  .cta-content p {
+    margin-bottom: 3.8rem;
+  }
+  .container-tab {
+    grid-template-columns: 1fr;
+    row-gap: 5.8rem;
+  }
+  .tab-btn {
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+    width: 80%;
+  }
+  .tabs {
+    align-items: center;
+  }
+  .blog {
+    width: 100%;
+  }
+  .section-carousel {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10rem;
+    column-gap: 5rem;
+  }
+  .resources {
+    grid-row: 1;
+  }
+  .quick-links {
+    grid-row: 1;
+  }
+  .copy-text {
+    grid-column: 1 / 4;
+  }
+  .footer-bottom-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6rem;
+  }
+  .carousel-img-box img {
+    width: 100%;
+  }
+  .section-carousel {
+    grid-template-rows: auto;
+  }
+  .testimonial {
+    padding: 2rem;
+  }
+  .social-links-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .section-hero {
+    padding-bottom: 4.2rem;
+  }
+  .section-accordion-faqs .section-description br {
+    display: none;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999999;
+  }
+  .account-btns {
+    display: none;
+  }
+  .not-visible {
+    display: block;
+  }
+  .header-container {
+    border: none;
+    padding-bottom: 0;
+  }
+  .main-nav {
+    border: none;
+    border-radius: 0;
+  }
+  .main-nav-list li:hover {
+    background-color: inherit;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 999999;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 999999;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 500;
+    padding: 0;
+  }
+  .main-nav-list li:nth-child(1) {
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+  .footer-grid {
+    column-gap: 6rem;
+  }
+  .section-features .container {
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+}
+@media (max-width: 30em) {
+  .cta-boxes {
+    padding-left: 40rem;
+  }
+  .logo-header a {
+    font-size: 2.8rem;
+  }
+}
